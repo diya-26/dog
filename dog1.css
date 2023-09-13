@@ -1,0 +1,286 @@
+body{
+    margin: 0;
+    padding: 0;
+   overflow: hidden;
+}
+
+.head1{
+    position: fixed;
+   text-align: center;
+   text-decoration: underline;
+   text-transform:uppercase ;
+   left: 100px;
+   width: 500px;
+    
+}
+.image1{
+    position: fixed;
+    left: 2px;
+    height: 650px;
+    width: 100%;
+}
+.box {
+    /* Your existing styles for the box container */
+    position: fixed; /* Change to fixed positioning to fix it in the viewport */
+    top: 20px; /* Position the .box 20px from the top of the viewport */
+    left: 50%; /* Center the .box horizontally */
+    transform:translateX(-50%);
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Set a fixed height for the .box */
+    width: 300px; /* Set a fixed width for the .box */
+    padding: 25%;
+    height: 100px;
+    border-radius: 10px;
+  
+  }
+  
+.but{
+position: absolute;
+right: 90vh;
+top: 14vh;
+cursor: pointer;
+
+}
+.but {
+--glow-color: rgb(217, 176, 255);
+--glow-spread-color: rgba(191, 123, 255, 0.781);
+--enhanced-glow-color: rgb(231, 206, 255);
+--btn-color: rgb(100, 61, 136);
+border: .25em solid var(--glow-color);
+padding: 1em 3em;
+color: var(--glow-color);
+font-size: 15px;
+font-weight: bold;
+background-color: var(--btn-color);
+border-radius: 1em;
+outline: none;
+box-shadow: 0 0 1em .25em var(--glow-color),
+        0 0 4em 1em var(--glow-spread-color),
+        inset 0 0 .75em .25em var(--glow-color);
+text-shadow: 0 0 .5em var(--glow-color);
+position: relative;
+transition: all 0.3s;
+}
+   
+.but::after {
+pointer-events: none;
+content: "";
+position: absolute;
+top: 120%;
+left: 0;
+height: 100%;
+width: 100%;
+background-color: var(--glow-spread-color);
+filter: blur(2em);
+opacity: .7;
+transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+}
+
+.but:hover {
+color: var(--btn-color);
+background-color: var(--glow-color);
+box-shadow: 0 0 1em .25em var(--glow-color),
+        0 0 4em 2em var(--glow-spread-color),
+        inset 0 0 .75em .25em var(--glow-color);
+}
+
+.but:active {
+box-shadow: 0 0 0.6em .25em var(--glow-color),
+        0 0 2.5em 2em var(--glow-spread-color),
+        inset 0 0 .5em .25em var(--glow-color);
+}
+
+
+.dogPaw{
+    position: absolute;
+   
+}
+
+.paws2{
+    position: fixed;
+    top: 2vh;
+    right: 190vh;
+    width: 20vh;
+    height: 19vh;
+}
+
+.paws3{
+    width: 30vh;
+    position: absolute;
+    left: 60vh;
+    top: 2vh;
+}
+.paws4{
+    position: fixed;
+    right: 20vh;
+    width: 8vh;
+}
+.paws5{
+    position: fixed;
+    right: 10vh;
+    width: 8vh;
+}
+.paws6{
+    position: fixed;
+    right: 30vh;
+    width: 8vh;
+}
+.paws7{
+    position: fixed;
+    right:40vh;
+    width: 8vh;
+}
+.paws8{
+    position: fixed;
+    right: 50vh;
+    width: 8vh;
+}
+.paws9{
+    position: fixed;
+    right: 60vh;
+    width: 8vh;
+}
+.paws10{
+    position: fixed;
+    right: 70vh;
+    width: 8vh;
+}
+.paws11{
+    position: fixed;
+    right: 80vh;
+    width: 8vh;
+}
+.paws12{
+    position: fixed;
+    right: 90vh;
+    width: 8vh;
+}
+.paws13{
+    position: fixed;
+    right: 100vh;
+    width: 8vh;
+}
+.paws14{
+    position: fixed;
+    right: 110vh;
+    width: 8vh;
+}
+.welcome {
+    position: absolute;
+    right: 450px;
+    top: 4vh;
+    transform: translateY(-50%);
+    text-decoration: underline;
+}
+
+@keyframes rotate {
+    0%,100% {
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(360deg);
+    }
+}
+
+.welcome span {
+    display: inline-block;
+    font-size: 10vh;
+    margin-right: 4px;
+    animation: rotate 5s linear infinite; 
+    text-shadow: 2px 2px;
+}
+.container{
+    position: absolute;
+    left: 2vh;
+    top: 150px;
+    
+}
+.title-word {
+    animation: color-animation 4s linear infinite;
+  }
+  
+  .title-word-1 {
+    --color-1: #DF8453;
+    --color-2: #3D8DAE;
+    --color-3: #E4A9A8;
+  }
+  
+  .title-word-2 {
+    --color-1: #DBAD4A;
+    --color-2: #ACCFCB;
+    --color-3: #17494D;
+  }
+  
+  .title-word-3 {
+    --color-1: #ACCFCB;
+    --color-2: #E4A9A8;
+    --color-3: #ACCFCB;
+  }
+  
+  .title-word-4 {
+    --color-1: #3D8DAE;
+    --color-2: #DF8453;
+    --color-3: #E4A9A8;
+  }
+  
+  @keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+  }
+  
+  /* Here are just some visual styles. 🖌 */
+  
+  .container {
+    display: grid;
+    place-items: center;  
+  
+  }
+  
+  .title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 5vh;
+    text-transform: uppercase;
+  }
+.container1{
+    position: absolute;
+    top: 77vh;
+    left: 2vh;
+    
+}
+.animate-charcter
+  {
+     text-transform: uppercase;
+    background-image: linear-gradient(
+      -225deg,
+      #231557 0%,
+      #44107a 29%,
+      #ff1361 67%,
+      #fff800 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+        font-size: 10vh;
+  }
+  
+  @keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
